@@ -238,7 +238,7 @@ nav a:focus {
 
 @media (max-width: 900px) {
     .hero-content {
-        flex-direction: column-reverse;
+        flex-direction: column;
         text-align: center;
         gap: 1.5rem;
     }
@@ -248,6 +248,20 @@ nav a:focus {
     .hero-img img {
         max-width: 98vw;
         height: 220px;
+    }
+    .hero-text {
+        text-align: center;
+    }
+}
+
+/* Hero image comes first on small screens */
+@media (max-width: 900px) {
+    .hero-content {
+        flex-direction: column;
+    }
+    .hero-img {
+        order: -1;
+        margin-bottom: 1.2rem;
     }
     .hero-text {
         text-align: center;
@@ -379,6 +393,17 @@ nav a:focus {
     }
     .about-content {
         text-align: center;
+    }
+}
+
+/* About image closer to text on small screens */
+@media (max-width: 900px) {
+    .about-new {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    .about-image {
+        margin-bottom: 0.5rem;
     }
 }
 
@@ -851,6 +876,53 @@ footer {
     }
     .process-arrow {
         display: none;
+    }
+}
+
+/* Make hero and about images closer to text on small screens */
+@media (max-width: 900px) {
+    .hero-content {
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+    .hero-img {
+        order: -1;
+        margin-bottom: 0.5rem;
+    }
+    .about-new {
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+    .about-image {
+        margin-bottom: 0.3rem;
+    }
+}
+
+/* On small screens, place hero, about, and delivery images below the text */
+@media (max-width: 900px) {
+    .hero-content {
+        flex-direction: column;
+    }
+    .hero-img {
+        order: 2;
+        margin-top: 0.7rem;
+        margin-bottom: 0;
+    }
+    .about-new {
+        flex-direction: column;
+    }
+    .about-image {
+        order: 2;
+        margin-top: 0.7rem;
+        margin-bottom: 0;
+    }
+    .delivery-flex {
+        flex-direction: column;
+    }
+    .delivery-img-col {
+        order: 2;
+        margin-top: 0.7rem;
+        margin-bottom: 0;
     }
 }
 
