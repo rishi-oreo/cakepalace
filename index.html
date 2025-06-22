@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CakePalace</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Add these SVGs just inside <body> at the top, after <body> tag -->
+<img src="https://img.icons8.com/ios-filled/100/fa314a/birthday-cake.png" class="bg-cake-deco cake1" alt="" aria-hidden="true">
+<img src="https://img.icons8.com/ios-filled/100/fa314a/cupcake.png" class="bg-cake-deco cake2" alt="" aria-hidden="true">
+<img src="https://img.icons8.com/ios-filled/100/fa314a/cake.png" class="bg-cake-deco cake3" alt="" aria-hidden="true">
+
+    <header>
+        <div class="container header-flex">
+            <div class="logo">
+                <img src="logo11.png" alt="CakePalace Logo" style="height:70px;">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About Bakery</a></li>
+                    <li><a href="#delivery">Home Delivery</a></li>
+                    <li><a href="#staff">Baking Process</a></li>
+                    <li><a href="#cakes">Cakes</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Welcome to <img src="logo22.png" alt="CakePalace" class="brand-logo" style="height:38px; vertical-align:middle;"></h1>
+                <p class="subtitle">Where Every Bite is a Celebration!</p>
+                <p class="subheading">Freshly Baked Goodness Delivered to Your Door.</p>
+                <a href="#cakes" class="btn-primary animate-btn">View Our Cakes</a>
+            </div>
+            <div class="hero-img">
+                <img src="m3.jpg" alt="Delicious Cakes">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about animate-section">
+        <div class="container about-new">
+            <div class="about-image">
+                <img src="m1.jpg" alt="Bakery Interior">
+            </div>
+            <div class="about-content">
+                <h2>About <img src="logo22.png" alt="CakePalace" class="brand-logo" style="height:38px; vertical-align:middle;"></h2>
+                <blockquote>
+                    “Baking happiness since 2024.”
+                </blockquote>
+                <p>
+                    At <img src="logo22.png" alt="CakePalace" class="brand-logo" style="height:1em; vertical-align:middle;">, every cake is a masterpiece. Our journey began in 2024 with a simple mission: to spread joy through the art of baking. Using only the finest ingredients, our passionate team crafts each creation with love and precision.
+                </p>
+                <div class="about-timeline">
+                    <div class="timeline-step">
+                        <span class="timeline-dot"></span>
+                        <div>
+                            <strong>2024</strong> — Founded
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <span class="timeline-dot"></span>
+                        <div>
+                            <strong>2025</strong> — Launched Home Delivery
+                        </div>
+                    </div>
+                    <div class="timeline-step">
+                        <span class="timeline-dot"></span>
+                        <div>
+                            <strong>2025</strong> — 1,000+ Happy Customers
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="delivery" class="delivery animate-section">
+        <div class="container delivery-flex delivery-card" style="align-items: center; gap: 2.5rem; flex-wrap: wrap;">
+            <div class="delivery-img-col" style="flex: 1 1 320px; display: flex; flex-direction: column; align-items: center;">
+                <div style="position: relative; width: 100%; max-width: 340px;">
+                    <img src="m2.jpg" alt="Cake Delivery" class="delivery-main-img" style="width:100%; height:220px; object-fit:cover; border-radius:18px; box-shadow:0 4px 32px #fa314a22;">
+                    <img src="https://img.icons8.com/ios-filled/120/fa314a/delivery.png" alt="Delivery Icon" class="delivery-icon-img"
+                         style="position:absolute; bottom:-28px; right:-28px; background:#fff; border-radius:50%; box-shadow:0 2px 12px #fa314a22; padding:10px; width:70px; height:70px;">
+                </div>
+            </div>
+            <div class="delivery-text-col" style="flex: 2 1 360px; min-width: 260px;">
+                <h2 style="font-size:2rem; color:var(--brand-red); margin-bottom:0.7rem;">Home Delivery</h2>
+                <p style="font-size:1.15rem; color:#333; margin-bottom:0.7rem;">
+                    Get your favorite cakes delivered <b>fresh and fast</b>! We deliver across the city, ensuring every cake reaches you in perfect condition. Order now and enjoy the taste of happiness at your doorstep.
+                </p>
+                <ul style="list-style:none; padding:0; margin:0 0 0.5rem 0; color:#fa314a; font-size:1rem;">
+                    <li style="margin-bottom:0.3rem;"><span style="font-size:1.2em;">🚚</span> Same-day delivery available</li>
+                    <li style="margin-bottom:0.3rem;"><span style="font-size:1.2em;">🎂</span> Safe, hygienic packaging</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="staff" class="staff animate-section">
+        <div class="container staff-brand">
+            <h2>Our <span class="brand">Baking Process</span></h2>
+            <div class="process-flow">
+                <div class="process-step">
+                    <span class="process-icon">🥚</span>
+                    <span>Fresh Ingredients</span>
+                </div>
+                <span class="process-arrow">→</span>
+                <div class="process-step">
+                    <span class="process-icon">🧁</span>
+                    <span>Baked with Care</span>
+                </div>
+                <span class="process-arrow">→</span>
+                <div class="process-step">
+                    <span class="process-icon">🎨</span>
+                    <span>Artistic Decoration</span>
+                </div>
+                <span class="process-arrow">→</span>
+                <div class="process-step">
+                    <span class="process-icon">🎁</span>
+                    <span>Delivered Fresh</span>
+                </div>
+            </div>
+            <div class="staff-quote">
+                <blockquote>
+                    “Every cake is a story, baked with passion and finished with a smile.”
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <section id="cakes" class="cake-listings animate-section">
+        <div class="container">
+            <h2>Our Cakes</h2>
+            <!-- Add this above the .cakes-grid in your cakes section -->
+<div class="cakes-section-buttons" style="text-align:center; margin-bottom:1.5rem;">
+    <button class="cake-section-btn" data-section="all">All</button>
+    <button class="cake-section-btn" data-section="low">₹600 - ₹900</button>
+    <button class="cake-section-btn" data-section="mid">₹901 - ₹1100</button>
+    <button class="cake-section-btn" data-section="high">₹1101 and above</button>
+</div>
+            <p class="custom-cakes-note" style="font-size:1.15rem; color:var(--brand-red); font-weight:600; margin-bottom:1.2rem; text-align:center;">
+    We also make <span style="color:#c71e36;">custom cakes</span> for your special occasions!
+</p>
+            <div class="cakes-grid">
+                <div class="cake-card">
+                    <img src="cakes/blackforest.jpeg" alt="Black Forest">
+                    <h3>Black Forest</h3>
+                    <span class="price">₹600</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/whiteforest.jpeg" alt="White Forest">
+                    <h3>White Forest</h3>
+                    <span class="price">₹600</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/honeynut.jpeg" alt="Honey Nut">
+                    <h3>Honey Nut</h3>
+                    <span class="price">₹900</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/redvelvet.jpeg" alt="Red Velvet">
+                    <h3>Red Velvet</h3>
+                    <span class="price">₹900</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/honeyalmond.jpeg" alt="Honey Almond">
+                    <h3>Honey Almond</h3>
+                    <span class="price">₹900</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/spanishdelight.jpeg" alt="Spanish Delight">
+                    <h3>Spanish Delight</h3>
+                    <span class="price">₹1000</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/vancho.jpeg" alt="Vancho">
+                    <h3>Vancho</h3>
+                    <span class="price">₹850</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/pineapple.jpeg" alt="Pineapple Cake">
+                    <h3>Pineapple Cake</h3>
+                    <span class="price">₹900</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/chocobite.jpeg" alt="Choco Bite">
+                    <h3>Choco Bite</h3>
+                    <span class="price">₹900</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/choconut.jpeg" alt="Choco Nut">
+                    <h3>Choco Nut</h3>
+                    <span class="price">₹900</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/chocored.jpeg" alt="Choco Red">
+                    <h3>Choco Red</h3>
+                    <span class="price">₹900</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/whitetruffle.jpeg" alt="White Truffle">
+                    <h3>White Truffle</h3>
+                    <span class="price">₹800</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/chocotruffle.jpeg" alt="Choco Truffle">
+                    <h3>Choco Truffle</h3>
+                    <span class="price">₹800</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/fruit.jpeg" alt="Fruit Cake">
+                    <h3>Fruit Cake</h3>
+                    <span class="price">₹1200</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/butterscotch.jpeg" alt="Butter Scotch">
+                    <h3>Butter Scotch</h3>
+                    <span class="price">₹900</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/whitenut.jpeg" alt="White Nut">
+                    <h3>White Nut</h3>
+                    <span class="price">₹1000</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/chocoflake.jpeg" alt="Choco Flake">
+                    <h3>Choco Flake</h3>
+                    <span class="price">₹1100</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/chococrunchy.jpeg" alt="Choco Crunchy">
+                    <h3>Choco Crunchy</h3>
+                    <span class="price">₹1100</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/nuttybubble.jpg" alt="Nutty Bubble">
+                    <h3>Nutty Bubble</h3>
+                    <span class="price">₹900</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/redbee.jpeg" alt="Red Bee">
+                    <h3>Red Bee</h3>
+                    <span class="price">₹900</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/germanchocolate.jpeg" alt="German Chocolate">
+                    <h3>German Chocolate</h3>
+                    <span class="price">₹1000</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/milkvancho.jpeg" alt="Milk Vancho">
+                    <h3>Milk Vancho</h3>
+                    <span class="price">₹900</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/blueberry.jpeg" alt="Blue Berry">
+                    <h3>Blue Berry</h3>
+                    <span class="price">₹850</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/pista.jpeg" alt="Pista">
+                    <h3>Pista</h3>
+                    <span class="price">₹900</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/strawberry.jpeg" alt="Strawberry">
+                    <h3>Strawberry</h3>
+                    <span class="price">₹800</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/malai.jpeg" alt="Malai Cake">
+                    <h3>Malai Cake</h3>
+                    <span class="price">₹1000</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/kulfi.jpeg" alt="Kulfi Cake">
+                    <h3>Kulfi Cake</h3>
+                    <span class="price">₹1000</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/rafello.jpeg" alt="Rafello">
+                    <h3>Rafello</h3>
+                    <span class="price">₹1000</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/ferraoroacher.jpeg" alt="Ferrao Roacher">
+                    <h3>Ferrao Roacher</h3>
+                    <span class="price">₹1200</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/hazelnut.jpeg" alt="Hazelnut">
+                    <h3>Hazelnut</h3>
+                    <span class="price">₹1200</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/tendercoconut.jpeg" alt="Tender Coconut">
+                    <h3>Tender Coconut</h3>
+                    <span class="price">₹1200</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/chococaramel.jpeg" alt="Choco Caramel">
+                    <h3>Choco Caramel</h3>
+                    <span class="price">₹900</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/buttercrunchy.jpeg" alt="Butter Crunchy">
+                    <h3>Butter Crunchy</h3>
+                    <span class="price">₹900</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/whitegerman.jpeg" alt="White German">
+                    <h3>White German</h3>
+                    <span class="price">₹1000</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/kifaya.jpeg" alt="Kifaya Cake">
+                    <h3>Kifaya Cake</h3>
+                    <span class="price">₹900</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/kitkat.jpeg" alt="Kit Kat Cake">
+                    <h3>Kit Kat Cake</h3>
+                    <span class="price">₹1300</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/coconutdelight.jpeg" alt="Coconut Delight">
+                    <h3>Coconut Delight</h3>
+                    <span class="price">₹1000</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/whitemagic.jpeg" alt="White Magic">
+                    <h3>White Magic</h3>
+                    <span class="price">₹1300</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/dryfruit.jpeg" alt="Dry Fruit">
+                    <h3>Dry Fruit</h3>
+                    <span class="price">₹1000</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/chocospanish.jpeg" alt="Choco Spanish">
+                    <h3>Choco Spanish</h3>
+                    <span class="price">₹1000</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/germanbutternut.jpeg" alt="German Butternut">
+                    <h3>German Butternut</h3>
+                    <span class="price">₹1000</span>
+                </div>
+                <div class="cake-card">
+                    <img src="cakes/mango.jpeg" alt="Mango Cake">
+                    <h3>Mango Cake</h3>
+                    <span class="price">₹800</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section: Add this above your footer -->
+<section class="cta-section animate-section">
+    <div class="container cta-flex">
+        <h2 class="cta-title">Ready to order your favorite cake?</h2>
+        <div class="cta-actions">
+            <a href="tel:+919400261191" class="btn-primary cta-btn">Call Now</a>
+            <a href="https://www.instagram.com/cakepalacemtr/" target="_blank" class="btn-primary cta-btn insta-btn">
+                DM on Instagram
+            </a>
+            <a href="https://wa.me/+919400261191" target="_blank" class="btn-primary cta-btn whatsapp-btn">
+                WhatsApp
+            </a>
+        </div>
+    </div>
+</section>
+
+    <footer>
+        <div class="container footer-flex">
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>G2 Square,Niduvottamkunnu, Thalassery Road, Mattannur, Kannur, Kerala 670702, India</p>
+                <p>Phone: +919400261191</p>
+                <p>Email: cakepalacemtr@gmail.com</p>
+                <iframe
+  src="https://www.google.com/maps?q=WHCC%2B6Q2,+Coorg+Hwy,+Porora,+Thalassery,+Mattannur,+Kerala+670702&output=embed"
+  width="100%" height="220" style="border:0; border-radius:12px; margin-top:1rem;"
+  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+            <div class="footer-social">
+    <img src="logo22.png" alt="CakePalace Full Logo" style="height:40px; margin-bottom:1rem; filter: invert(1) grayscale(1) brightness(2) contrast(100);">
+    <h3>Follow Us</h3>
+    <div style="margin-top:0rem;">
+        <img src="qr.png" alt="Instagram QR Code" style="height:300px;">
+        <div style="font-size:0.95rem; color:#fff; margin-top:0.3rem;">Scan for Instagram</div>
+    </div>
+</div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 CakePalace. All rights reserved.
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
